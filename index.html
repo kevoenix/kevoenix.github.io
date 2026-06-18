@@ -1,17 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevoenix Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 全局重置與排版設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 標題與副標題樣式 */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        /* 按鈕樣式 */
+        .btn-site {
+            display: inline-block;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 15px 32px;
+            background: linear-gradient(90deg, #0284c7, #0369a1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        .btn-site:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(90deg, #0369a1, #0284c7);
+        }
+
+        /* 連結樣式 */
+        .link-ads {
+            font-size: 0.95rem;
+            color: #64748b;
+            text-decoration: none;
+            border-bottom: 1px dashed #64748b;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .link-ads:hover {
+            color: #38bdf8;
+            border-color: #38bdf8;
+        }
+    </style>
 </head>
 <body>
-    <h1>Kevoenix</h1>
-    <p>Mobile Game</p>
-    
-    <p>
-        <a href="https://sites.google.com/view/kevoenix/" target="_blank" style="font-size: 18px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Go to our website (Google site)</a>
-    </p>
 
-    <p><a href="app-ads.txt">查看 app-ads.txt</a></p>
+    <h1>Kevoenix</h1>
+    <p>Mobile Game Studio</p>
+    
+    <div>
+        <a href="https://sites.google.com/view/kevoenix/" target="_blank" class="btn-site">
+            Go to our website (Google site)
+        </a>
+    </div>
+
+    <div>
+        <a href="app-ads.txt" class="link-ads">查看 app-ads.txt</a>
+    </div>
+
 </body>
 </html>
